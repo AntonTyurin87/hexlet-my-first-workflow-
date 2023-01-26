@@ -1,0 +1,10 @@
+# Name of workflow
+
+name: hello-world
+# on – определяет события, которые запускают воркфлоу
+on:
+  - push
+jobs:
+  build: # build – произвольно выбранное имя задания
+    steps: # список шагов, которые надо выполнить
+      - run: make say-hello
